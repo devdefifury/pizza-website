@@ -9,6 +9,11 @@ export default {
       height: {
         screen: '100dvh',
       },
+      colors: {
+        'brown': '#854d27',
+        'red' : '#DE1732',
+        'lightred':'#CE3247'
+      },
     },
   },
   plugins: [],

@@ -10,7 +10,7 @@ const username = useSelector((state)=> state.user.username)
       <h1 className="mb-8 text-xl font-semibold md:text-3xl">
         The best pizza.
         <br />
-        <span className="text-yellow-500">
+        <span className="">
           Straight out of the oven, straight to you.
         </span>
       </h1>

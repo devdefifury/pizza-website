@@ -43,7 +43,7 @@ function Order() {
 
         <div className="space-x-2">
           {priority && (
-            <span className="rounded-full bg-red-500 px-3 py-1 text-sm font-semibold uppercase tracking-wide text-red-50">
+            <span className="rounded-full bg-red px-3 py-1 text-sm font-semibold uppercase tracking-wide text-white">
               Priority
             </span>
           )}

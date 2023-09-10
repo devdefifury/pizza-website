@@ -4,11 +4,11 @@
 
 @layer components {
   .input {
-    @apply w-full rounded-full border border-stone-200 px-4 py-2 text-sm transition-all duration-300 placeholder:text-stone-400 focus:outline-none focus:ring focus:ring-yellow-400 md:px-6 md:py-3;
+    @apply w-full rounded-full border border-stone-200 px-4 py-2 text-sm transition-all duration-300 placeholder:text-stone-400 focus:outline-none focus:ring focus:ring-[#DE1631] md:px-6 md:py-3;
   }
 
   .loader {
-    width: 45px;
+    /* width: 45px;
     aspect-ratio: 0.75;
     --c: no-repeat linear-gradient(theme(colors.stone.800) 0 0);
     background:
@@ -44,7 +44,27 @@
         50% 50%,
         100% 100%;
     }
+  } */
+
+
+
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    position: relative;
+    transform-origin:50% -200%;
+    background:radial-gradient(at 30% 30%,#0000,#000a) red;
+    animation: w8 1s cubic-bezier(.5,-200,.5,200) infinite;
   }
+  .wobbling-8:before {
+    content: "";
+    position: absolute;
+    inset:-200% 8px 100%;
+    background:#ddd; 
+  }
+  @keyframes w8 { 
+      100% { transform:rotate(1deg)} 
+}
 }
 
 /* https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
